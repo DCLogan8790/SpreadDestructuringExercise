@@ -20,30 +20,25 @@ const disneyPlusShows = [
 // 2a
 const netflixMovies = {
 
-    key: "action",
-    value: "Extraction",
+    action: "Extraction",
 
-    key: "drama",
-    value: "The Irishman"
+    drama: "The Irishman"
 };
 
 // 2b
 const disneyPlusMovies = {
-    key: "musical",
-    value: "Hamilton",
-    key: "drama",
-    value: "Togo"
+    musical: "Hamilton",
+    drama: "Togo"
 };
 // 2c
 const streamingMovies = {
     ...disneyPlusMovies,
     ...netflixMovies,
-    key: "comedy",
-    value: "Shazam!"
+    comedy: "Shazam!"
 
 };
 // 2d
-// console.log(streamingMovies);
+console.log(streamingMovies);
 
 // 3a
 const disneyJunior = [
@@ -55,7 +50,7 @@ const disneyJunior = [
 const [pj,jake] = disneyJunior;
 
 // 3c
-// console.log(pj,jake);
+console.log(pj,jake);
 
 // 4a
 const avengers = {
@@ -67,7 +62,7 @@ const avengers = {
 const {captainAmerica,theHulk} = avengers;
 
 // 4c
-// console.log(captainAmerica,theHulk);
+console.log(captainAmerica,theHulk);
 
 // 4d
 const moreAvengers = {
@@ -91,4 +86,16 @@ const bonus = {
   };
 
 //   5a
+const all = [
+...bonus.first,
+...bonus.second,
+...bonus.third
+];
+console.log(all);
 
+
+// 5b
+const [one,two,three] = bonus.first;
+const [four,five,six] = bonus.second;
+const [seven,eight,nine] = bonus.third;
+console.log(one,two,three,four,five,six,seven,eight,nine);
